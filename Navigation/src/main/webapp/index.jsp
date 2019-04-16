@@ -4,6 +4,7 @@
 </head>
 <body>
 <h2>Hello World!</h2>
-<a href="navig">NAVIGATE</a>
+<a href="navig">navigate</a>
+<a href="regist">Login</a>
 </body>
 </html>
