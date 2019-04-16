@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration form</title>
+</head>
+<body bgcolor="lightblue">
+<center><h3>Registration form</h3>
+<form action="DisplayForm" method="post">
+<table>
+<tr>
+<td>
+Enter name:
+</td>
+<td>
+<input type="text" name="name" pattern="[A-Za-z]{1,}" title="enter only alphabets" required/>
+</td>
+</tr>
+<tr>
+<td>
+Enter password:
+</td>
+<td>
+<input type="password" name="password" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}" title="should contain atleast one uppercase,one lowercase,one number,one special character" required/>
+</td>
+</tr>
+<tr>
+<td>
+Enter address:
+</td>
+<td>
+<textarea name="address" cols="16" rows="4" required></textarea>
+</td>
+</tr>
+<tr>
+<td>
+Enter mail id:
+</td>
+<td>
+<input type="text" name="mailid" pattern="[A-Za-z0-9]{1,}[@]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{3}" required/>
+</td>
+</tr>
+<tr>
+<td>
+Enter contact no:
+</td>
+<td>
+<input type="text" name="contactno" pattern="[6,9]{1}[0-9]{9}" title="enter numbers" required/>
+</td>
+</tr>
+<tr>
+<td>
+Gender:
+</td>
+<td>
+<input type="radio" name="gender" value="Male" required/>Male
+<input type="radio" name="gender" value="Female" required/>Female
+</td>
+</tr>
+<tr>
+<td>
+Qualification:
+</td>
+<td>
+<input type="checkbox" name="qualification" value="10"/>10th
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<input type="checkbox" name="qualification" value="12"/>12th
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<input type="checkbox" name="qualification" value="ug"/>Graduation
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<input type="checkbox" name="qualification" value="pg"/>Post Graduation
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<input type="checkbox" name="qualification" value="phd"/>Ph.D
+</td>
+</tr>
+<tr>
+<td colspan="2"><center>
+<input type="submit" value="SUBMIT"/>
+</center>
+</td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>
