@@ -2,9 +2,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device=width,initial-scale=1">
-<link rel="stylesheet" href="D:\bootstrapdist\bootstrap-4.3.1-dist\css\bootstrap.css">
-<script src="D:\bootstrapdist\bootstrap-4.3.1-dist\js\bootstrap.js">
-</script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <title>bootstrap demo</title>
 </head>
 <body>
@@ -15,10 +15,10 @@
 <div class="container" style="background-color:cyan">
 <p>i am in container</p>
 <div class="row">
-<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1" style="background-color:lightgreen">column1</div>
-<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1" style="background-color:lightblue">column2</div>
-<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1" style="background-color:pink">column3</div>
-<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1" style="background-color:orange">column4</div>
+<div class="col-xs-1 col-sm-1 col-md-1 col-lg-3 col-xl-3" style="background-color:lightgreen">column1</div>
+<div class="col-xs-1 col-sm-1 col-md-1 col-lg-3 col-xl-3" style="background-color:lightblue">column2</div>
+<div class="col-xs-1 col-sm-1 col-md-1 col-lg-3 col-xl-3" style="background-color:pink">column3</div>
+<div class="col-xs-1 col-sm-1 col-md-1 col-lg-3 col-xl-3" style="background-color:orange">column4</div>
 </div>
 </div>
 <h4>Navigation bar</h4>
@@ -28,5 +28,34 @@
       <a href="login.html">Login</a>
   </div>
 </nav>
+<h4>Carousel</h4>
+<div class="container">
+<div id="myCarousel" class="carousel slide">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="world.jpg" alt="world" width=100% height=100%>
+    </div>
+
+    <div class="item">
+      <img src="code.jpeg" alt="code" width=100% height=100%>
+    </div>
+
+    <div class="item">
+      <img src="code1.jpg" alt="code1" width=100% height=100%>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>				
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+</div>
 </body>
 </html>
